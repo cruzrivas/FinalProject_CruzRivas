@@ -1,0 +1,43 @@
+<%- include("_header") -%>
+
+    <h1>Are you sure you want to delete this customer?</h1>
+    <body>
+    <form action="/delete" method="POST">
+        <table>
+            <tr>
+                <td><label for="cusid">ID</label>:</td>
+                <td><input type="number" name="cusid" id="cusid" value="<%= customer.cusid %>"   readonly style="background-color: gray;" /></td>
+            </tr>
+            <tr>
+                <td><label for="cusFname">First Name</label>:</td>
+                <td><input type="text" name="cusfname" id="cusfname" value="<%= customer.cusfname %>"   readonly style="background-color: gray;"/></td>
+            </tr>
+            <tr>
+                <td><label for="cusLname">Last Name</label>:</td>
+                <td><input type="text" name="cuslname" id="cuslname" value="<%= customer.cuslname %>"   readonly style="background-color: gray;"/></td>
+            </tr>
+            <tr>
+                <td><label for="cusstate">State</label>:</td>
+                <td><input type="text" name="cusstate" id="cusstate" value="<%= customer.cusstate %>"   readonly style="background-color: gray;"/></td>
+            </tr>
+            <tr>
+                <td><label for="cusSalesytd">State YTD</label>:</td>
+                <td><input type="text" name="cussalesytd" id="cusSalesytd" value="<%= customer.cussalesytd %>"   readonly style="background-color: gray;"/></td>
+            </tr>
+            <tr>
+                <td><label for="cussalesprev">Previous Years Sales</label>:</td>
+                <td><input type="text" name="cussalesprev" id="cussalesprev" value="<%= customer.cussalesprev %>"   readonly style="background-color: gray;"/></td>
+            </tr>
+    <tr>
+        <td>
+            <input type="submit" value="Delete" />
+
+        </td>
+    </tr>
+        </table>
+</form>
+</body>
+
+
+
+<%- include("_footer") -%>

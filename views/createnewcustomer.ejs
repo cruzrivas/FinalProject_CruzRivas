@@ -1,0 +1,40 @@
+<%- include("_header") -%>
+
+<h2>Create Customer</h2>
+
+<form action="/createnewcustomer" method="POST">
+  <table>
+    <tr>
+      <td><label for="cusid">ID</label>:</td>
+      <td><input type="number" name="cusid" id="cusid" required/></td>
+    </tr>
+    <tr>
+      <td><label for="cusFname">First Name</label>:</td>
+      <td><input type="text" name="cusfname" id="cusfname" required/></td>
+    </tr>
+    <tr>
+      <td><label for="cusLname">Last Name</label>:</td>
+      <td><input type="text" name="cuslname" id="cuslname" required/></td>
+    </tr>
+    <tr>
+      <td><label for="cusstate">State</label>:</td>
+      <td><input type="text" name="cusstate" id="cusstate"/></td>
+    </tr>
+    <tr>
+      <td><label for="cusSalesytd">State YTD</label>:</td>
+      <td><input type="text" name="cussalesytd" id="cussalesytd" /></td>
+    </tr>
+    <tr>
+      <td><label for="cussalesprev">Previous Years Sales</label>:</td>
+      <td><input type="text" name="cussalesprev" id="cussalesprev"/></td>
+    </tr>
+    <tr>
+      <td span="2">
+        <input type="submit" value="Create Customer"/>
+        <input type="reset" value="Reset" />
+      </td>
+    </tr>
+  </table>
+</form>
+
+<%- include("_footer") -%>
