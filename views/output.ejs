@@ -1,18 +1,8 @@
 <%- include("_header") -%>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Customer Export</title>
-</head>
 <body>
     <h1>Customer Export</h1>
-    <h2>Enter a file name and click Export Customers</h2>
-    <h4>Total number of records in the database: <%= totRecs %></h4>
-
-    <% if (message) { %>
-        <h3><%= message %></h3>
-    <% } %>
+    <p>Enter a file name and click Export Customers</br></p>
+    <p>Total number of records in the database: <%= totRecs %></p>
 
     <form action="/output" method="POST">
         <label for="filename">File name:</label>
